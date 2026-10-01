@@ -3,32 +3,26 @@
 <head>
   <meta charset="UTF-8">
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <meta
     name="description"
-    content="Mafia & Sons Driving School - Professional Code 8, Code 10 and Code 14 driving lessons. Learn to drive with confidence."
+    content="Mafia & Sons Driving School - Professional Code 8, Code 10 and Code 14 driving lessons."
   >
 
   <meta
     name="keywords"
-    content="Mafia and Sons Driving School, driving school, Code 8, Code 10, Code 14, driving lessons, South Africa"
+    content="Mafia and Sons Driving School, driving school, Code 8, Code 10, Code 14, driving lessons South Africa"
   >
 
   <meta name="theme-color" content="#080808">
 
-  <title>
-    Mafia & Sons Driving School | Learn to Drive With Confidence
-  </title>
+  <title>Mafia & Sons Driving School</title>
 
   <style>
-
-    /* =========================================
-       GLOBAL
-    ========================================= */
+    /* =========================
+       RESET & GLOBAL
+    ========================= */
 
     * {
       margin: 0;
@@ -41,11 +35,7 @@
     }
 
     body {
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
+      font-family: Arial, Helvetica, sans-serif;
       background: #080808;
       color: #ffffff;
       line-height: 1.6;
@@ -58,8 +48,8 @@
     }
 
     a {
-      text-decoration: none;
       color: inherit;
+      text-decoration: none;
     }
 
     button,
@@ -74,12 +64,12 @@
       --gold-light: #ffd83d;
       --black: #080808;
       --dark: #111111;
-      --dark-card: #171717;
+      --card: #181818;
       --white: #ffffff;
       --grey: #aaaaaa;
-      --border: rgba(255,255,255,0.12);
+      --border: rgba(255, 255, 255, 0.12);
       --radius: 20px;
-      --shadow: 0 20px 50px rgba(0,0,0,0.35);
+      --shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
     }
 
     .container {
@@ -91,9 +81,9 @@
       padding: 90px 0;
     }
 
-    /* =========================================
+    /* =========================
        TOP BAR
-    ========================================= */
+    ========================= */
 
     .top-bar {
       background: var(--gold);
@@ -110,28 +100,24 @@
       flex-wrap: wrap;
     }
 
-    /* =========================================
+    /* =========================
        NAVIGATION
-    ========================================= */
+    ========================= */
 
     header {
       position: sticky;
       top: 0;
       z-index: 1000;
-
-      background: rgba(8,8,8,0.96);
+      background: rgba(8, 8, 8, 0.96);
       backdrop-filter: blur(15px);
-
       border-bottom: 1px solid var(--border);
     }
 
     .navbar {
       min-height: 78px;
-
       display: flex;
       align-items: center;
       justify-content: space-between;
-
       gap: 25px;
     }
 
@@ -144,12 +130,10 @@
     .logo {
       width: 58px;
       height: 58px;
-
-      object-fit: cover;
-
+      object-fit: contain;
       border-radius: 10px;
-
       border: 1px solid var(--gold);
+      background: #000000;
     }
 
     .brand-text {
@@ -183,10 +167,8 @@
 
     .nav-whatsapp {
       background: var(--gold);
-      color: #000 !important;
-
+      color: #000000 !important;
       padding: 11px 17px;
-
       border-radius: 30px;
     }
 
@@ -196,37 +178,30 @@
 
     .menu-button {
       display: none;
-
       background: none;
       border: none;
-
-      color: #fff;
-
+      color: #ffffff;
       font-size: 28px;
-
       cursor: pointer;
     }
 
-    /* =========================================
+    /* =========================
        HERO
-    ========================================= */
+    ========================= */
 
     .hero {
       min-height: calc(100vh - 116px);
-
       display: flex;
       align-items: center;
-
       position: relative;
       overflow: hidden;
 
       background:
         radial-gradient(
           circle at 80% 20%,
-          rgba(244,196,0,0.20),
+          rgba(244, 196, 0, 0.20),
           transparent 35%
         ),
-
         linear-gradient(
           135deg,
           #050505,
@@ -237,16 +212,15 @@
 
     .hero::after {
       content: "";
-
       position: absolute;
       inset: 0;
 
       background:
         linear-gradient(
           90deg,
-          rgba(0,0,0,0.96),
-          rgba(0,0,0,0.78),
-          rgba(0,0,0,0.35)
+          rgba(0, 0, 0, 0.96),
+          rgba(0, 0, 0, 0.78),
+          rgba(0, 0, 0, 0.30)
         );
 
       pointer-events: none;
@@ -254,27 +228,24 @@
 
     .hero-logo {
       position: absolute;
-
       right: -80px;
       top: 50%;
-
       transform: translateY(-50%);
-
       width: 62%;
       max-width: 800px;
-
-      opacity: 0.28;
+      max-height: 80%;
+      object-fit: contain;
+      opacity: 0.27;
 
       filter:
         drop-shadow(
-          0 20px 40px rgba(0,0,0,0.7)
+          0 20px 40px rgba(0, 0, 0, 0.7)
         );
     }
 
     .hero-content {
       position: relative;
       z-index: 2;
-
       padding: 90px 0;
     }
 
@@ -284,30 +255,21 @@
 
     .hero-badge {
       display: inline-block;
-
       background: var(--gold);
-      color: #000;
-
+      color: #000000;
       padding: 8px 16px;
-
       border-radius: 50px;
-
       font-size: 13px;
       font-weight: 900;
-
       text-transform: uppercase;
       letter-spacing: 1px;
-
       margin-bottom: 22px;
     }
 
     .hero h1 {
       font-size: clamp(45px, 7vw, 86px);
-
       line-height: 0.95;
-
       letter-spacing: -4px;
-
       margin-bottom: 25px;
     }
 
@@ -317,11 +279,8 @@
 
     .hero-description {
       max-width: 650px;
-
       color: #d1d1d1;
-
       font-size: 18px;
-
       margin-bottom: 30px;
     }
 
@@ -333,33 +292,24 @@
 
     .btn {
       display: inline-flex;
-
       align-items: center;
       justify-content: center;
-
       gap: 8px;
-
       padding: 14px 21px;
-
       border-radius: 12px;
-
       font-weight: 900;
-
       border: 1px solid transparent;
-
       cursor: pointer;
-
       transition: 0.25s;
     }
 
     .btn-primary {
       background: var(--gold);
-      color: #000;
+      color: #000000;
     }
 
     .btn-primary:hover {
       background: var(--gold-light);
-
       transform: translateY(-2px);
     }
 
@@ -375,31 +325,22 @@
 
     .hero-stats {
       display: flex;
-
       gap: 12px;
-
       flex-wrap: wrap;
-
       margin-top: 45px;
     }
 
     .hero-stat {
       min-width: 140px;
-
-      background: rgba(255,255,255,0.06);
-
+      background: rgba(255, 255, 255, 0.06);
       border: 1px solid var(--border);
-
       border-radius: 14px;
-
       padding: 13px 16px;
     }
 
     .hero-stat strong {
       display: block;
-
       color: var(--gold);
-
       font-size: 20px;
     }
 
@@ -407,48 +348,40 @@
       color: #cccccc;
     }
 
-    /* =========================================
+    /* =========================
        SECTION HEADINGS
-    ========================================= */
+    ========================= */
 
     .section-heading {
       max-width: 720px;
-
       margin-bottom: 45px;
     }
 
     .section-label {
       color: var(--gold);
-
       font-weight: 900;
-
       font-size: 13px;
-
       letter-spacing: 2px;
-
       text-transform: uppercase;
     }
 
     .section-heading h2 {
       font-size: clamp(32px, 5vw, 52px);
-
       line-height: 1.05;
-
       margin: 10px 0 15px;
     }
 
     .section-heading p {
-      color: #aaa;
+      color: #aaaaaa;
       font-size: 17px;
     }
 
-    /* =========================================
+    /* =========================
        COURSES
-    ========================================= */
+    ========================= */
 
     .courses-section {
       background: #f4f4f4;
-
       color: #111111;
     }
 
@@ -458,22 +391,15 @@
 
     .courses-grid {
       display: grid;
-
-      grid-template-columns:
-        repeat(4, 1fr);
-
+      grid-template-columns: repeat(4, 1fr);
       gap: 18px;
     }
 
     .course-card {
       position: relative;
-
       overflow: hidden;
-
-      min-height: 270px;
-
+      min-height: 280px;
       padding: 27px;
-
       border-radius: var(--radius);
 
       background:
@@ -484,103 +410,74 @@
         );
 
       color: #ffffff;
-
-      border: 1px solid #333;
-
+      border: 1px solid #333333;
       transition: 0.25s;
     }
 
     .course-card:hover {
       transform: translateY(-7px);
-
       border-color: var(--gold);
-
       box-shadow: var(--shadow);
     }
 
     .course-number {
       color: var(--gold);
-
       font-size: 55px;
-
       font-weight: 1000;
-
       line-height: 1;
     }
 
     .course-card h3 {
       margin-top: 30px;
-
       font-size: 22px;
     }
 
     .course-card p {
-      color: #aaa;
-
+      color: #aaaaaa;
       margin-top: 8px;
-
       font-size: 14px;
     }
 
     .course-link {
       display: inline-block;
-
       margin-top: 20px;
-
       color: var(--gold);
-
       font-weight: 800;
-
       font-size: 14px;
     }
 
-    /* =========================================
+    /* =========================
        FEATURES
-    ========================================= */
+    ========================= */
 
     .features-grid {
       display: grid;
-
-      grid-template-columns:
-        repeat(3, 1fr);
-
+      grid-template-columns: repeat(3, 1fr);
       gap: 20px;
     }
 
     .feature-card {
-      background: var(--dark-card);
-
+      background: var(--card);
       border: 1px solid var(--border);
-
       border-radius: var(--radius);
-
       padding: 30px;
-
       transition: 0.25s;
     }
 
     .feature-card:hover {
       border-color: var(--gold);
-
       transform: translateY(-4px);
     }
 
     .feature-icon {
       width: 54px;
       height: 54px;
-
       display: grid;
       place-items: center;
-
-      background:
-        rgba(244,196,0,0.12);
-
+      background: rgba(244, 196, 0, 0.12);
       color: var(--gold);
-
       border-radius: 15px;
-
       font-size: 25px;
-
       margin-bottom: 20px;
     }
 
@@ -589,105 +486,84 @@
     }
 
     .feature-card p {
-      color: #aaa;
+      color: #aaaaaa;
     }
 
-    /* =========================================
-       ABOUT / BRAND
-    ========================================= */
+    /* =========================
+       ABOUT
+    ========================= */
 
     .about-section {
       background: #f4f4f4;
-
-      color: #111;
+      color: #111111;
     }
 
     .about-grid {
       display: grid;
-
-      grid-template-columns:
-        1fr 1fr;
-
+      grid-template-columns: 1fr 1fr;
       gap: 50px;
-
       align-items: center;
     }
 
     .logo-display {
       background: #080808;
-
       border-radius: 25px;
-
       padding: 20px;
-
-      border: 1px solid #333;
-
+      border: 1px solid #333333;
       box-shadow: var(--shadow);
     }
 
     .logo-display img {
       width: 100%;
-
+      max-height: 500px;
+      object-fit: contain;
       border-radius: 15px;
     }
 
     .about-content h2 {
       font-size: clamp(35px, 5vw, 55px);
-
       line-height: 1.05;
-
       margin: 10px 0 20px;
     }
 
     .about-content p {
-      color: #555;
-
+      color: #555555;
       margin-bottom: 25px;
     }
 
     .benefits {
       display: grid;
-
       gap: 13px;
-
       margin-bottom: 28px;
     }
 
     .benefit {
       display: flex;
-
       align-items: center;
-
       gap: 12px;
-
       font-weight: 700;
     }
 
     .benefit-check {
       width: 28px;
       height: 28px;
-
       display: grid;
       place-items: center;
-
       background: var(--gold);
-
-      color: #000;
-
+      color: #000000;
       border-radius: 50%;
-
       font-weight: 1000;
     }
 
-    /* =========================================
+    /* =========================
        BOOKING
-    ========================================= */
+    ========================= */
 
     .booking-section {
       background:
         radial-gradient(
           circle at 80% 30%,
-          rgba(244,196,0,0.13),
+          rgba(244, 196, 0, 0.13),
           transparent 30%
         ),
         #0d0d0d;
@@ -695,40 +571,28 @@
 
     .booking-box {
       background: #171717;
-
       border: 1px solid var(--border);
-
       border-radius: 25px;
-
       padding: 35px;
-
       box-shadow: var(--shadow);
     }
 
     .booking-form {
       display: grid;
-
       gap: 17px;
     }
 
     .form-grid {
       display: grid;
-
-      grid-template-columns:
-        repeat(2, 1fr);
-
+      grid-template-columns: repeat(2, 1fr);
       gap: 17px;
     }
 
     .form-group label {
       display: block;
-
-      color: #ddd;
-
+      color: #dddddd;
       font-size: 13px;
-
       font-weight: 800;
-
       margin-bottom: 6px;
     }
 
@@ -736,19 +600,12 @@
     select,
     textarea {
       width: 100%;
-
       background: #0c0c0c;
-
       color: #ffffff;
-
       border: 1px solid #363636;
-
       border-radius: 11px;
-
       padding: 14px;
-
       outline: none;
-
       transition: 0.2s;
     }
 
@@ -756,94 +613,74 @@
     select:focus,
     textarea:focus {
       border-color: var(--gold);
-
       box-shadow:
         0 0 0 2px
-        rgba(244,196,0,0.08);
+        rgba(244, 196, 0, 0.08);
     }
 
     textarea {
       min-height: 130px;
-
       resize: vertical;
     }
 
     .booking-note {
-      color: #999;
-
+      color: #999999;
       font-size: 13px;
     }
 
-    /* =========================================
+    /* =========================
        FAQ
-    ========================================= */
+    ========================= */
 
     .faq-section {
       background: #f4f4f4;
-
       color: #111111;
     }
 
     .faq {
       display: grid;
-
       gap: 12px;
     }
 
     details {
       background: #ffffff;
-
-      border: 1px solid #ddd;
-
+      border: 1px solid #dddddd;
       border-radius: 15px;
-
       padding: 19px 20px;
     }
 
     summary {
       cursor: pointer;
-
       font-weight: 900;
     }
 
     details p {
-      color: #555;
-
+      color: #555555;
       margin-top: 12px;
     }
 
-    /* =========================================
+    /* =========================
        CONTACT
-    ========================================= */
+    ========================= */
 
     .contact-grid {
       display: grid;
-
-      grid-template-columns:
-        1.2fr 0.8fr;
-
+      grid-template-columns: 1.2fr 0.8fr;
       gap: 30px;
     }
 
     .contact-card {
-      background: var(--dark-card);
-
+      background: var(--card);
       border: 1px solid var(--border);
-
       border-radius: var(--radius);
-
       padding: 30px;
     }
 
     .contact-item {
       display: flex;
-
       align-items: flex-start;
-
       gap: 15px;
-
       padding: 18px 0;
-
       border-bottom: 1px solid #2c2c2c;
     }
 
@@ -854,27 +691,18 @@
     .contact-icon {
       width: 48px;
       height: 48px;
-
       flex: 0 0 48px;
-
       display: grid;
       place-items: center;
-
-      background:
-        rgba(244,196,0,0.13);
-
+      background: rgba(244, 196, 0, 0.13);
       color: var(--gold);
-
       border-radius: 13px;
-
       font-size: 21px;
     }
 
     .contact-item small {
       display: block;
-
-      color: #888;
-
+      color: #888888;
       margin-bottom: 3px;
     }
 
@@ -882,27 +710,21 @@
       font-size: 17px;
     }
 
-    /* =========================================
+    /* =========================
        FOOTER
-    ========================================= */
+    ========================= */
 
     footer {
       background: #050505;
-
       border-top: 1px solid var(--border);
-
       padding: 35px 0;
     }
 
     .footer-content {
       display: flex;
-
       justify-content: space-between;
-
       align-items: center;
-
       gap: 20px;
-
       flex-wrap: wrap;
     }
 
@@ -911,24 +733,19 @@
     }
 
     .footer-brand p {
-      color: #777;
-
+      color: #777777;
       font-size: 13px;
-
       margin-top: 5px;
     }
 
     .footer-links {
       display: flex;
-
       gap: 18px;
-
       flex-wrap: wrap;
     }
 
     .footer-links a {
-      color: #aaa;
-
+      color: #aaaaaa;
       font-size: 13px;
     }
 
@@ -936,16 +753,14 @@
       color: var(--gold);
     }
 
-    /* =========================================
+    /* =========================
        FLOATING WHATSAPP
-    ========================================= */
+    ========================= */
 
     .floating-whatsapp {
       position: fixed;
-
       right: 20px;
       bottom: 20px;
-
       z-index: 2000;
 
       width: 60px;
@@ -957,14 +772,13 @@
       border-radius: 50%;
 
       background: #25D366;
-
       color: #ffffff;
 
       font-size: 27px;
 
       box-shadow:
         0 10px 30px
-        rgba(0,0,0,0.35);
+        rgba(0, 0, 0, 0.35);
 
       transition: 0.25s;
     }
@@ -973,13 +787,12 @@
       transform: scale(1.08);
     }
 
-    /* =========================================
+    /* =========================
        TOAST
-    ========================================= */
+    ========================= */
 
     .toast {
       position: fixed;
-
       left: 50%;
       bottom: 25px;
 
@@ -989,7 +802,6 @@
       z-index: 3000;
 
       background: #ffffff;
-
       color: #000000;
 
       padding: 14px 20px;
@@ -1008,9 +820,9 @@
         translate(-50%, 0);
     }
 
-    /* =========================================
-       MOBILE
-    ========================================= */
+    /* =========================
+       TABLET
+    ========================= */
 
     @media (max-width: 950px) {
 
@@ -1020,23 +832,21 @@
 
       .nav-links {
         position: absolute;
-
         top: 78px;
-
         left: 0;
         right: 0;
 
         display: none;
 
         flex-direction: column;
-
         align-items: stretch;
 
         background: #080808;
 
         padding: 20px;
 
-        border-bottom: 1px solid var(--border);
+        border-bottom:
+          1px solid var(--border);
       }
 
       .nav-links.active {
@@ -1049,20 +859,16 @@
 
       .hero-logo {
         width: 100%;
-
         right: -20%;
-
-        opacity: 0.17;
+        opacity: 0.16;
       }
 
       .courses-grid {
-        grid-template-columns:
-          repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
       }
 
       .features-grid {
-        grid-template-columns:
-          repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
       }
 
       .about-grid,
@@ -1070,6 +876,10 @@
         grid-template-columns: 1fr;
       }
     }
+
+    /* =========================
+       MOBILE
+    ========================= */
 
     @media (max-width: 650px) {
 
@@ -1079,7 +889,6 @@
 
       .top-bar-content {
         justify-content: center;
-
         text-align: center;
       }
 
@@ -1118,9 +927,7 @@
 
       .hero-stats {
         display: grid;
-
-        grid-template-columns:
-          repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
       }
 
       .hero-stat {
@@ -1144,21 +951,18 @@
       .floating-whatsapp {
         width: 55px;
         height: 55px;
-
         right: 15px;
         bottom: 15px;
       }
     }
-
   </style>
 </head>
 
 <body>
 
-
-  <!-- =========================================
+  <!-- =========================
        TOP BAR
-  ========================================= -->
+  ========================= -->
 
   <div class="top-bar">
 
@@ -1169,7 +973,7 @@
       </span>
 
       <span>
-        📞 064 578 3544 &nbsp; | &nbsp; CALL / WHATSAPP
+        📞 064 578 3544 | CALL / WHATSAPP
       </span>
 
     </div>
@@ -1177,9 +981,9 @@
   </div>
 
 
-  <!-- =========================================
+  <!-- =========================
        NAVIGATION
-  ========================================= -->
+  ========================= -->
 
   <header>
 
@@ -1191,7 +995,7 @@
       >
 
         <img
-          src="images/logo.jpg"
+          src="images/IMG-20260708-WA0016.jpg"
           alt="Mafia & Sons Driving School Logo"
           class="logo"
         >
@@ -1250,6 +1054,7 @@
         <a
           href="https://wa.me/27645783544"
           target="_blank"
+          rel="noopener"
           class="nav-whatsapp"
         >
           WhatsApp
@@ -1264,10 +1069,9 @@
 
   <main>
 
-
-    <!-- =========================================
+    <!-- =========================
          HERO
-    ========================================= -->
+    ========================= -->
 
     <section
       class="hero"
@@ -1275,31 +1079,25 @@
     >
 
       <img
-        src="images/logo.jpg"
-        alt="Mafia & Sons"
+        src="images/IMG-20260708-WA0016.jpg"
+        alt="Mafia & Sons Driving School"
         class="hero-logo"
       >
-
 
       <div class="container hero-content">
 
         <div class="hero-text">
 
           <div class="hero-badge">
-            New Skills • New Confidence • New You
+            NEW SKILLS • NEW CONFIDENCE
           </div>
 
-
           <h1>
-
             Learn To Drive
-
             <span>
               With Confidence.
             </span>
-
           </h1>
-
 
           <p class="hero-description">
 
@@ -1317,7 +1115,6 @@
 
           </p>
 
-
           <div class="hero-buttons">
 
             <a
@@ -1326,7 +1123,6 @@
             >
               📅 Book A Lesson
             </a>
-
 
             <a
               href="tel:+27645783544"
@@ -1337,58 +1133,26 @@
 
           </div>
 
-
           <div class="hero-stats">
 
             <div class="hero-stat">
-
-              <strong>
-                Code 8
-              </strong>
-
-              <small>
-                Training
-              </small>
-
+              <strong>Code 8</strong>
+              <small>Training</small>
             </div>
 
-
             <div class="hero-stat">
-
-              <strong>
-                Code 10
-              </strong>
-
-              <small>
-                Training
-              </small>
-
+              <strong>Code 10</strong>
+              <small>Training</small>
             </div>
 
-
             <div class="hero-stat">
-
-              <strong>
-                Code 14
-              </strong>
-
-              <small>
-                Training
-              </small>
-
+              <strong>Code 14</strong>
+              <small>Training</small>
             </div>
 
-
             <div class="hero-stat">
-
-              <strong>
-                064 578 3544
-              </strong>
-
-              <small>
-                Call / WhatsApp
-              </small>
-
+              <strong>064 578 3544</strong>
+              <small>Call / WhatsApp</small>
             </div>
 
           </div>
@@ -1400,9 +1164,9 @@
     </section>
 
 
-    <!-- =========================================
+    <!-- =========================
          COURSES
-    ========================================= -->
+    ========================= -->
 
     <section
       class="courses-section"
@@ -1414,7 +1178,7 @@
         <div class="section-heading">
 
           <div class="section-label">
-            Our Licence Training
+            Licence Training
           </div>
 
           <h2>
@@ -1422,15 +1186,14 @@
           </h2>
 
           <p>
-            Professional training for learners preparing
-            to become confident and responsible drivers.
+            Professional training for learners
+            preparing to become confident and
+            responsible drivers.
           </p>
 
         </div>
 
-
         <div class="courses-grid">
-
 
           <article class="course-card">
 
@@ -1443,8 +1206,9 @@
             </h3>
 
             <p>
-              Driving training for light motor vehicles,
-              practical road skills and licence test preparation.
+              Driving training for light motor
+              vehicles, practical road skills
+              and licence test preparation.
             </p>
 
             <a
@@ -1468,8 +1232,9 @@
             </h3>
 
             <p>
-              Professional training for heavier motor
-              vehicles and practical driving skills.
+              Professional training for heavier
+              motor vehicles and practical
+              driving skills.
             </p>
 
             <a
@@ -1493,8 +1258,9 @@
             </h3>
 
             <p>
-              Heavy motor vehicle training and preparation
-              for the relevant driving licence test.
+              Heavy motor vehicle training and
+              preparation for the relevant
+              driving licence test.
             </p>
 
             <a
@@ -1518,8 +1284,9 @@
             </h3>
 
             <p>
-              Contact us to discuss your required licence,
-              lessons, availability and pricing.
+              Contact us to discuss your required
+              licence, lessons, availability
+              and pricing.
             </p>
 
             <a
@@ -1531,7 +1298,6 @@
 
           </article>
 
-
         </div>
 
       </div>
@@ -1539,9 +1305,9 @@
     </section>
 
 
-    <!-- =========================================
+    <!-- =========================
          FEATURES
-    ========================================= -->
+    ========================= -->
 
     <section>
 
@@ -1558,15 +1324,14 @@
           </h2>
 
           <p>
-            Our website and booking system make it easy
-            to enquire, choose your training and contact us.
+            Build the knowledge, practical skills
+            and confidence needed for responsible
+            driving.
           </p>
 
         </div>
 
-
         <div class="features-grid">
-
 
           <article class="feature-card">
 
@@ -1579,8 +1344,8 @@
             </h3>
 
             <p>
-              Build better road awareness and responsible
-              driving habits.
+              Build better road awareness and
+              responsible driving habits.
             </p>
 
           </article>
@@ -1597,8 +1362,8 @@
             </h3>
 
             <p>
-              Develop real-world vehicle control and
-              practical road skills.
+              Develop real-world vehicle control
+              and practical road skills.
             </p>
 
           </article>
@@ -1615,8 +1380,8 @@
             </h3>
 
             <p>
-              Progress step by step and become more
-              comfortable behind the wheel.
+              Progress step by step and become
+              more comfortable behind the wheel.
             </p>
 
           </article>
@@ -1633,8 +1398,8 @@
             </h3>
 
             <p>
-              Learn observation, anticipation and
-              safer decision-making.
+              Learn observation, anticipation
+              and safer decision-making.
             </p>
 
           </article>
@@ -1651,8 +1416,8 @@
             </h3>
 
             <p>
-              Prepare your practical driving skills
-              for your licence test.
+              Prepare your practical driving
+              skills for your licence test.
             </p>
 
           </article>
@@ -1669,12 +1434,11 @@
             </h3>
 
             <p>
-              Training focused on patience, practice,
-              confidence and your success.
+              Training focused on patience,
+              practice, confidence and success.
             </p>
 
           </article>
-
 
         </div>
 
@@ -1683,9 +1447,9 @@
     </section>
 
 
-    <!-- =========================================
+    <!-- =========================
          ABOUT
-    ========================================= -->
+    ========================= -->
 
     <section
       class="about-section"
@@ -1694,12 +1458,11 @@
 
       <div class="container about-grid">
 
-
         <div class="logo-display">
 
           <img
-            src="images/logo.jpg"
-            alt="Official Mafia & Sons Logo"
+            src="images/IMG-20260708-WA0016.jpg"
+            alt="Official Mafia & Sons Driving School Logo"
           >
 
         </div>
@@ -1708,7 +1471,7 @@
         <div class="about-content">
 
           <div class="section-label">
-            Mafia & Sons Driving School
+            MAFIA & SONS DRIVING SCHOOL
           </div>
 
           <h2>
@@ -1716,14 +1479,12 @@
           </h2>
 
           <p>
-
-            Whether you're starting your driving journey
-            or looking to improve your skills, Mafia & Sons
-            Driving School is here to help you develop
-            confidence and practical road ability.
-
+            Whether you're starting your driving
+            journey or looking to improve your
+            skills, Mafia & Sons Driving School
+            is here to help you develop confidence
+            and practical road ability.
           </p>
-
 
           <div class="benefits">
 
@@ -1783,7 +1544,6 @@
 
           </div>
 
-
           <a
             href="#booking"
             class="btn btn-primary"
@@ -1798,9 +1558,9 @@
     </section>
 
 
-    <!-- =========================================
+    <!-- =========================
          BOOKING
-    ========================================= -->
+    ========================= -->
 
     <section
       class="booking-section"
@@ -1820,12 +1580,12 @@
           </h2>
 
           <p>
-            Complete the form below and your enquiry
-            will be prepared as a WhatsApp message.
+            Complete the form below and your
+            enquiry will be prepared as a
+            WhatsApp message.
           </p>
 
         </div>
-
 
         <div class="booking-box">
 
@@ -1834,9 +1594,7 @@
             id="bookingForm"
           >
 
-
             <div class="form-grid">
-
 
               <div class="form-group">
 
@@ -1964,7 +1722,6 @@
 
               </div>
 
-
             </div>
 
 
@@ -1983,11 +1740,9 @@
 
 
             <p class="booking-note">
-
-              Your request is sent through WhatsApp for
-              confirmation. Submitting this form does not
-              automatically confirm an appointment.
-
+              Your request will be sent through WhatsApp
+              for confirmation. Submitting this form does
+              not automatically confirm an appointment.
             </p>
 
 
@@ -1995,11 +1750,8 @@
               type="submit"
               class="btn btn-primary"
             >
-
-              💬 Send Booking Request on WhatsApp
-
+              💬 Send Booking Request On WhatsApp
             </button>
-
 
           </form>
 
@@ -2010,9 +1762,9 @@
     </section>
 
 
-    <!-- =========================================
+    <!-- =========================
          FAQ
-    ========================================= -->
+    ========================= -->
 
     <section
       class="faq-section"
@@ -2036,7 +1788,6 @@
 
         <div class="faq">
 
-
           <details>
 
             <summary>
@@ -2044,10 +1795,9 @@
             </summary>
 
             <p>
-              Mafia & Sons Driving School offers training
-              for Code 8, Code 10 and Code 14. Contact us
-              to confirm the specific training programme
-              and requirements.
+              Mafia & Sons Driving School offers
+              training for Code 8, Code 10 and
+              Code 14.
             </p>
 
           </details>
@@ -2060,8 +1810,9 @@
             </summary>
 
             <p>
-              Complete the booking form on this website
-              or contact us directly on WhatsApp or by phone.
+              Complete the booking form on this
+              website or contact us directly on
+              WhatsApp or by phone.
             </p>
 
           </details>
@@ -2074,9 +1825,9 @@
             </summary>
 
             <p>
-              Yes. You can select your preferred date and
-              time in the booking form. The school will
-              confirm availability with you.
+              Yes. You can select your preferred
+              date and time in the booking form.
+              The school will confirm availability.
             </p>
 
           </details>
@@ -2104,8 +1855,8 @@
             </summary>
 
             <p>
-              Please contact Mafia & Sons for current
-              lesson prices and available packages.
+              Please contact Mafia & Sons for
+              current lesson prices and packages.
             </p>
 
           </details>
@@ -2124,7 +1875,6 @@
 
           </details>
 
-
         </div>
 
       </div>
@@ -2132,16 +1882,13 @@
     </section>
 
 
-    <!-- =========================================
+    <!-- =========================
          CONTACT
-    ========================================= -->
+    ========================= -->
 
-    <section
-      id="contact"
-    >
+    <section id="contact">
 
       <div class="container contact-grid">
-
 
         <div>
 
@@ -2156,16 +1903,15 @@
             </h2>
 
             <p>
-              Contact Mafia & Sons Driving School to
-              enquire about lessons, licence codes,
-              availability and pricing.
+              Contact Mafia & Sons Driving School
+              to enquire about lessons, licence
+              codes, availability and pricing.
             </p>
 
           </div>
 
 
           <div class="contact-card">
-
 
             <div class="contact-item">
 
@@ -2180,9 +1926,11 @@
                 </small>
 
                 <strong>
+
                   <a href="tel:+27645783544">
                     +27 64 578 3544
                   </a>
+
                 </strong>
 
               </div>
@@ -2207,6 +1955,7 @@
                   <a
                     href="https://wa.me/27645783544"
                     target="_blank"
+                    rel="noopener"
                   >
                     Chat With Us
                   </a>
@@ -2238,7 +1987,6 @@
 
             </div>
 
-
           </div>
 
         </div>
@@ -2264,12 +2012,11 @@
           <a
             href="https://wa.me/27645783544?text=Hello%20Mafia%20%26%20Sons%20Driving%20School.%20I%20would%20like%20to%20enquire%20about%20driving%20lessons."
             target="_blank"
+            rel="noopener"
             class="btn btn-primary"
             style="width:100%;"
           >
-
             💬 WhatsApp Now
-
           </a>
 
 
@@ -2281,30 +2028,25 @@
               margin-top:12px;
             "
           >
-
             📞 Call Now
-
           </a>
 
         </div>
-
 
       </div>
 
     </section>
 
-
   </main>
 
 
-  <!-- =========================================
+  <!-- =========================
        FOOTER
-  ========================================= -->
+  ========================= -->
 
   <footer>
 
     <div class="container footer-content">
-
 
       <div class="footer-brand">
 
@@ -2313,7 +2055,9 @@
         </strong>
 
         <p>
-          Professional Training • Patience • Passion • Your Success
+          Professional Training •
+          Patience • Passion •
+          Your Success
         </p>
 
       </div>
@@ -2341,25 +2085,23 @@
 
 
       <div>
-
         © <span id="year"></span>
         Mafia & Sons
-
       </div>
-
 
     </div>
 
   </footer>
 
 
-  <!-- =========================================
+  <!-- =========================
        FLOATING WHATSAPP
-  ========================================= -->
+  ========================= -->
 
   <a
     href="https://wa.me/27645783544"
     target="_blank"
+    rel="noopener"
     class="floating-whatsapp"
     aria-label="WhatsApp Mafia and Sons"
   >
@@ -2367,9 +2109,9 @@
   </a>
 
 
-  <!-- =========================================
+  <!-- =========================
        TOAST
-  ========================================= -->
+  ========================= -->
 
   <div
     class="toast"
@@ -2379,22 +2121,19 @@
   </div>
 
 
-  <!-- =========================================
+  <!-- =========================
        JAVASCRIPT
-  ========================================= -->
+  ========================= -->
 
   <script>
 
-    /* =========================================
-       MOBILE MENU
-    ========================================= */
+    /* MOBILE MENU */
 
     const menuButton =
       document.getElementById("menuButton");
 
     const navLinks =
       document.getElementById("navLinks");
-
 
     menuButton.addEventListener(
       "click",
@@ -2406,15 +2145,13 @@
     );
 
 
-    /* Close mobile menu after clicking a link */
-
     document
       .querySelectorAll(".nav-links a")
-      .forEach(function(link) {
+      .forEach(function (link) {
 
         link.addEventListener(
           "click",
-          function() {
+          function () {
 
             navLinks.classList.remove("active");
 
@@ -2424,97 +2161,62 @@
       });
 
 
-    /* =========================================
-       CURRENT YEAR
-    ========================================= */
+    /* CURRENT YEAR */
 
     document.getElementById("year").textContent =
       new Date().getFullYear();
 
 
-    /* =========================================
-       PREVENT PAST DATES
-    ========================================= */
+    /* PREVENT PAST DATES */
 
     const dateInput =
       document.getElementById("date");
 
-
     const today =
       new Date();
 
-
     const localDate =
       new Date(
-        today.getTime()
-        -
+        today.getTime() -
         today.getTimezoneOffset() * 60000
       )
-      .toISOString()
-      .split("T")[0];
-
+        .toISOString()
+        .split("T")[0];
 
     dateInput.min = localDate;
 
 
-    /* =========================================
-       WHATSAPP BOOKING FORM
-    ========================================= */
+    /* WHATSAPP BOOKING */
 
     const bookingForm =
       document.getElementById("bookingForm");
 
-
     bookingForm.addEventListener(
       "submit",
-      function(event) {
+      function (event) {
 
         event.preventDefault();
 
-
         const name =
-          document
-          .getElementById("name")
-          .value
-          .trim();
-
+          document.getElementById("name").value.trim();
 
         const phone =
-          document
-          .getElementById("phone")
-          .value
-          .trim();
-
+          document.getElementById("phone").value.trim();
 
         const course =
-          document
-          .getElementById("course")
-          .value;
-
+          document.getElementById("course").value;
 
         const experience =
-          document
-          .getElementById("experience")
-          .value;
-
+          document.getElementById("experience").value;
 
         const date =
-          document
-          .getElementById("date")
-          .value;
-
+          document.getElementById("date").value;
 
         const time =
-          document
-          .getElementById("time")
-          .value;
-
+          document.getElementById("time").value;
 
         const message =
-          document
-          .getElementById("message")
-          .value
-          .trim();
+          document.getElementById("message").value.trim();
 
 
         const whatsappMessage =
@@ -2554,11 +2256,8 @@ Thank you.`;
 
 
         const whatsappURL =
-          "https://wa.me/27645783544?text="
-          +
-          encodeURIComponent(
-            whatsappMessage
-          );
+          "https://wa.me/27645783544?text=" +
+          encodeURIComponent(whatsappMessage);
 
 
         window.open(
@@ -2567,17 +2266,14 @@ Thank you.`;
         );
 
 
-        /* Show confirmation */
-
         const toast =
           document.getElementById("toast");
-
 
         toast.classList.add("show");
 
 
         setTimeout(
-          function() {
+          function () {
 
             toast.classList.remove("show");
 
