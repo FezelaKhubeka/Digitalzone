@@ -2,28 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <meta
     name="description"
     content="Mafia & Sons Driving School - Professional Code 8, Code 10 and Code 14 driving lessons."
   >
-
   <meta
     name="keywords"
     content="Mafia and Sons Driving School, driving school, Code 8, Code 10, Code 14, driving lessons South Africa"
   >
-
   <meta name="theme-color" content="#080808">
-
   <title>Mafia & Sons Driving School</title>
 
   <style>
-    /* =========================
-       RESET & GLOBAL
-    ========================= */
-
     * {
       margin: 0;
       padding: 0;
@@ -81,10 +72,6 @@
       padding: 90px 0;
     }
 
-    /* =========================
-       TOP BAR
-    ========================= */
-
     .top-bar {
       background: var(--gold);
       color: #000000;
@@ -99,10 +86,6 @@
       gap: 20px;
       flex-wrap: wrap;
     }
-
-    /* =========================
-       NAVIGATION
-    ========================= */
 
     header {
       position: sticky;
@@ -185,17 +168,12 @@
       cursor: pointer;
     }
 
-    /* =========================
-       HERO
-    ========================= */
-
     .hero {
       min-height: calc(100vh - 116px);
       display: flex;
       align-items: center;
       position: relative;
       overflow: hidden;
-
       background:
         radial-gradient(
           circle at 80% 20%,
@@ -214,7 +192,6 @@
       content: "";
       position: absolute;
       inset: 0;
-
       background:
         linear-gradient(
           90deg,
@@ -222,7 +199,6 @@
           rgba(0, 0, 0, 0.78),
           rgba(0, 0, 0, 0.30)
         );
-
       pointer-events: none;
     }
 
@@ -236,11 +212,7 @@
       max-height: 80%;
       object-fit: contain;
       opacity: 0.27;
-
-      filter:
-        drop-shadow(
-          0 20px 40px rgba(0, 0, 0, 0.7)
-        );
+      filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.7));
     }
 
     .hero-content {
@@ -348,10 +320,6 @@
       color: #cccccc;
     }
 
-    /* =========================
-       SECTION HEADINGS
-    ========================= */
-
     .section-heading {
       max-width: 720px;
       margin-bottom: 45px;
@@ -376,10 +344,6 @@
       font-size: 17px;
     }
 
-    /* =========================
-       COURSES
-    ========================= */
-
     .courses-section {
       background: #f4f4f4;
       color: #111111;
@@ -401,14 +365,12 @@
       min-height: 280px;
       padding: 27px;
       border-radius: var(--radius);
-
       background:
         linear-gradient(
           145deg,
           #252525,
           #080808
         );
-
       color: #ffffff;
       border: 1px solid #333333;
       transition: 0.25s;
@@ -445,10 +407,6 @@
       font-weight: 800;
       font-size: 14px;
     }
-
-    /* =========================
-       FEATURES
-    ========================= */
 
     .features-grid {
       display: grid;
@@ -488,10 +446,6 @@
     .feature-card p {
       color: #aaaaaa;
     }
-
-    /* =========================
-       ABOUT
-    ========================= */
 
     .about-section {
       background: #f4f4f4;
@@ -554,10 +508,6 @@
       border-radius: 50%;
       font-weight: 1000;
     }
-
-    /* =========================
-       BOOKING
-    ========================= */
 
     .booking-section {
       background:
@@ -628,10 +578,6 @@
       font-size: 13px;
     }
 
-    /* =========================
-       FAQ
-    ========================= */
-
     .faq-section {
       background: #f4f4f4;
       color: #111111;
@@ -658,10 +604,6 @@
       color: #555555;
       margin-top: 12px;
     }
-
-    /* =========================
-       CONTACT
-    ========================= */
 
     .contact-grid {
       display: grid;
@@ -710,10 +652,6 @@
       font-size: 17px;
     }
 
-    /* =========================
-       FOOTER
-    ========================= */
-
     footer {
       background: #050505;
       border-top: 1px solid var(--border);
@@ -753,33 +691,22 @@
       color: var(--gold);
     }
 
-    /* =========================
-       FLOATING WHATSAPP
-    ========================= */
-
     .floating-whatsapp {
       position: fixed;
       right: 20px;
       bottom: 20px;
       z-index: 2000;
-
       width: 60px;
       height: 60px;
-
       display: grid;
       place-items: center;
-
       border-radius: 50%;
-
       background: #25D366;
       color: #ffffff;
-
       font-size: 27px;
-
       box-shadow:
         0 10px 30px
         rgba(0, 0, 0, 0.35);
-
       transition: 0.25s;
     }
 
@@ -787,45 +714,26 @@
       transform: scale(1.08);
     }
 
-    /* =========================
-       TOAST
-    ========================= */
-
     .toast {
       position: fixed;
       left: 50%;
       bottom: 25px;
-
-      transform:
-        translate(-50%, 120px);
-
+      transform: translate(-50%, 120px);
       z-index: 3000;
-
       background: #ffffff;
       color: #000000;
-
       padding: 14px 20px;
-
       border-radius: 10px;
-
       font-weight: 800;
-
       box-shadow: var(--shadow);
-
       transition: 0.3s;
     }
 
     .toast.show {
-      transform:
-        translate(-50%, 0);
+      transform: translate(-50%, 0);
     }
 
-    /* =========================
-       TABLET
-    ========================= */
-
     @media (max-width: 950px) {
-
       .menu-button {
         display: block;
       }
@@ -835,18 +743,12 @@
         top: 78px;
         left: 0;
         right: 0;
-
         display: none;
-
         flex-direction: column;
         align-items: stretch;
-
         background: #080808;
-
         padding: 20px;
-
-        border-bottom:
-          1px solid var(--border);
+        border-bottom: 1px solid var(--border);
       }
 
       .nav-links.active {
@@ -877,12 +779,7 @@
       }
     }
 
-    /* =========================
-       MOBILE
-    ========================= */
-
     @media (max-width: 650px) {
-
       section {
         padding: 65px 0;
       }
@@ -959,150 +856,60 @@
 </head>
 
 <body>
-
-  <!-- =========================
-       TOP BAR
-  ========================= -->
-
   <div class="top-bar">
-
     <div class="container top-bar-content">
-
-      <span>
-        🚗 Professional Driving Training
-      </span>
-
-      <span>
-        📞 064 578 3544 | CALL / WHATSAPP
-      </span>
-
+      <span>🚗 Professional Driving Training</span>
+      <span>📞 064 578 3544 | CALL / WHATSAPP</span>
     </div>
-
   </div>
 
-
-  <!-- =========================
-       NAVIGATION
-  ========================= -->
-
   <header>
-
     <nav class="navbar container">
-
-      <a
-        href="#home"
-        class="logo-link"
-      >
-
+      <a href="#home" class="logo-link">
         <img
           src="IMG-20260708-WA0016.jpg"
           alt="Mafia & Sons Driving School Logo"
           class="logo"
         >
-
         <div class="brand-text">
-
           MAFIA & SONS
-
-          <span>
-            DRIVING SCHOOL
-          </span>
-
+          <span>DRIVING SCHOOL</span>
         </div>
-
       </a>
 
+      <button class="menu-button" id="menuButton" aria-label="Open navigation menu">☰</button>
 
-      <button
-        class="menu-button"
-        id="menuButton"
-        aria-label="Open navigation menu"
-      >
-        ☰
-      </button>
-
-
-      <div
-        class="nav-links"
-        id="navLinks"
-      >
-
-        <a href="#home">
-          Home
-        </a>
-
-        <a href="#courses">
-          Courses
-        </a>
-
-        <a href="#about">
-          About
-        </a>
-
-        <a href="#booking">
-          Book Lesson
-        </a>
-
-        <a href="#faq">
-          FAQ
-        </a>
-
-        <a href="#contact">
-          Contact
-        </a>
-
-        <a
-          href="https://wa.me/27645783544"
-          target="_blank"
-          rel="noopener"
-          class="nav-whatsapp"
-        >
-          WhatsApp
-        </a>
-
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#courses">Courses</a>
+        <a href="#about">About</a>
+        <a href="#booking">Book Lesson</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+        <a href="https://wa.me/27645783544" target="_blank" class="nav-whatsapp">WhatsApp</a>
       </div>
-
     </nav>
-
   </header>
 
-
   <main>
-
-    <!-- =========================
-         HERO
-    ========================= -->
-
-    <section
-      class="hero"
-      id="home"
-    >
-
+    <section class="hero" id="home">
       <img
-          src="IMG-20260708-WA0016.jpg"
-        alt="Mafia & Sons Driving School"
+        src="IMG-20260708-WA0016.jpg"
+        alt="Mafia & Sons"
         class="hero-logo"
       >
 
       <div class="container hero-content">
-
         <div class="hero-text">
-
-          <div class="hero-badge">
-            NEW SKILLS • NEW CONFIDENCE
-          </div>
+          <div class="hero-badge">NEW SKILLS • NEW CONFIDENCE • NEW YOU</div>
 
           <h1>
             Learn To Drive
-            <span>
-              With Confidence.
-            </span>
+            <span>With Confidence.</span>
           </h1>
 
           <p class="hero-description">
-
             Welcome to Mafia & Sons Driving School.
-
             Get professional driving training designed
             to develop your confidence, road awareness
             and practical driving skills.
@@ -1112,903 +919,270 @@
             <strong>
               Code 8 • Code 10 • Code 14
             </strong>
-
           </p>
 
           <div class="hero-buttons">
-
-            <a
-              href="#booking"
-              class="btn btn-primary"
-            >
-              📅 Book A Lesson
-            </a>
-
-            <a
-              href="tel:+27645783544"
-              class="btn btn-outline"
-            >
-              📞 Call 064 578 3544
-            </a>
-
+            <a href="#booking" class="btn btn-primary">📅 Book A Lesson</a>
+            <a href="tel:+27645783544" class="btn btn-outline">📞 Call 064 578 3544</a>
           </div>
 
           <div class="hero-stats">
-
             <div class="hero-stat">
               <strong>Code 8</strong>
               <small>Training</small>
             </div>
-
             <div class="hero-stat">
               <strong>Code 10</strong>
               <small>Training</small>
             </div>
-
             <div class="hero-stat">
               <strong>Code 14</strong>
               <small>Training</small>
             </div>
-
             <div class="hero-stat">
               <strong>064 578 3544</strong>
               <small>Call / WhatsApp</small>
             </div>
-
           </div>
-
         </div>
-
       </div>
-
     </section>
 
-
-    <!-- =========================
-         COURSES
-    ========================= -->
-
-    <section
-      class="courses-section"
-      id="courses"
-    >
-
+    <section class="courses-section" id="courses">
       <div class="container">
-
         <div class="section-heading">
-
-          <div class="section-label">
-            Licence Training
-          </div>
-
-          <h2>
-            Choose your driving category.
-          </h2>
-
-          <p>
-            Professional training for learners
-            preparing to become confident and
-            responsible drivers.
-          </p>
-
+          <div class="section-label">Licence Training</div>
+          <h2>Choose your driving category.</h2>
+          <p>Professional training for learners preparing to become confident and responsible drivers.</p>
         </div>
 
         <div class="courses-grid">
-
           <article class="course-card">
-
-            <div class="course-number">
-              08
-            </div>
-
-            <h3>
-              Code 8
-            </h3>
-
-            <p>
-              Driving training for light motor
-              vehicles, practical road skills
-              and licence test preparation.
-            </p>
-
-            <a
-              href="#booking"
-              class="course-link"
-            >
-              Enquire Now →
-            </a>
-
+            <div class="course-number">08</div>
+            <h3>Code 8</h3>
+            <p>Driving training for light motor vehicles, practical road skills and licence test preparation.</p>
+            <a href="#booking" class="course-link">Enquire Now →</a>
           </article>
 
-
           <article class="course-card">
-
-            <div class="course-number">
-              10
-            </div>
-
-            <h3>
-              Code 10
-            </h3>
-
-            <p>
-              Professional training for heavier
-              motor vehicles and practical
-              driving skills.
-            </p>
-
-            <a
-              href="#booking"
-              class="course-link"
-            >
-              Enquire Now →
-            </a>
-
+            <div class="course-number">10</div>
+            <h3>Code 10</h3>
+            <p>Professional training for heavier motor vehicles and practical driving skills.</p>
+            <a href="#booking" class="course-link">Enquire Now →</a>
           </article>
 
-
           <article class="course-card">
-
-            <div class="course-number">
-              14
-            </div>
-
-            <h3>
-              Code 14
-            </h3>
-
-            <p>
-              Heavy motor vehicle training and
-              preparation for the relevant
-              driving licence test.
-            </p>
-
-            <a
-              href="#booking"
-              class="course-link"
-            >
-              Enquire Now →
-            </a>
-
+            <div class="course-number">14</div>
+            <h3>Code 14</h3>
+            <p>Heavy motor vehicle training and preparation for the relevant driving licence test.</p>
+            <a href="#booking" class="course-link">Enquire Now →</a>
           </article>
 
-
           <article class="course-card">
-
-            <div class="course-number">
-              ALL
-            </div>
-
-            <h3>
-              Driving Training
-            </h3>
-
-            <p>
-              Contact us to discuss your required
-              licence, lessons, availability
-              and pricing.
-            </p>
-
-            <a
-              href="#contact"
-              class="course-link"
-            >
-              Contact Us →
-            </a>
-
+            <div class="course-number">ALL</div>
+            <h3>Driving Training</h3>
+            <p>Contact us to discuss your required licence, lessons, availability and pricing.</p>
+            <a href="#contact" class="course-link">Contact Us →</a>
           </article>
-
         </div>
-
       </div>
-
     </section>
 
-
-    <!-- =========================
-         FEATURES
-    ========================= -->
-
-    <section>
-
-      <div class="container">
-
-        <div class="section-heading">
-
-          <div class="section-label">
-            Why Mafia & Sons
-          </div>
-
-          <h2>
-            More than just learning to drive.
-          </h2>
-
-          <p>
-            Build the knowledge, practical skills
-            and confidence needed for responsible
-            driving.
-          </p>
-
-        </div>
-
-        <div class="features-grid">
-
-          <article class="feature-card">
-
-            <div class="feature-icon">
-              🛡️
-            </div>
-
-            <h3>
-              Safety First
-            </h3>
-
-            <p>
-              Build better road awareness and
-              responsible driving habits.
-            </p>
-
-          </article>
-
-
-          <article class="feature-card">
-
-            <div class="feature-icon">
-              🚘
-            </div>
-
-            <h3>
-              Practical Training
-            </h3>
-
-            <p>
-              Develop real-world vehicle control
-              and practical road skills.
-            </p>
-
-          </article>
-
-
-          <article class="feature-card">
-
-            <div class="feature-icon">
-              🎯
-            </div>
-
-            <h3>
-              Confidence
-            </h3>
-
-            <p>
-              Progress step by step and become
-              more comfortable behind the wheel.
-            </p>
-
-          </article>
-
-
-          <article class="feature-card">
-
-            <div class="feature-icon">
-              🧠
-            </div>
-
-            <h3>
-              Defensive Driving
-            </h3>
-
-            <p>
-              Learn observation, anticipation
-              and safer decision-making.
-            </p>
-
-          </article>
-
-
-          <article class="feature-card">
-
-            <div class="feature-icon">
-              🏁
-            </div>
-
-            <h3>
-              Test Preparation
-            </h3>
-
-            <p>
-              Prepare your practical driving
-              skills for your licence test.
-            </p>
-
-          </article>
-
-
-          <article class="feature-card">
-
-            <div class="feature-icon">
-              ⭐
-            </div>
-
-            <h3>
-              Professional Approach
-            </h3>
-
-            <p>
-              Training focused on patience,
-              practice, confidence and success.
-            </p>
-
-          </article>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- =========================
-         ABOUT
-    ========================= -->
-
-    <section
-      class="about-section"
-      id="about"
-    >
-
+    <section class="about-section" id="about">
       <div class="container about-grid">
-
         <div class="logo-display">
-
           <img
             src="IMG-20260708-WA0016.jpg"
             alt="Official Mafia & Sons Driving School Logo"
           >
-
         </div>
 
-
         <div class="about-content">
-
-          <div class="section-label">
-            MAFIA & SONS DRIVING SCHOOL
-          </div>
-
-          <h2>
-            Drive Your Future.
-          </h2>
-
+          <div class="section-label">MAFIA & SONS DRIVING SCHOOL</div>
+          <h2>Drive Your Future.</h2>
           <p>
-            Whether you're starting your driving
-            journey or looking to improve your
-            skills, Mafia & Sons Driving School
-            is here to help you develop confidence
-            and practical road ability.
+            Whether you're starting your driving journey or looking to improve your skills,
+            Mafia & Sons Driving School is here to help you develop confidence and practical road ability.
           </p>
 
           <div class="benefits">
-
             <div class="benefit">
-
-              <div class="benefit-check">
-                ✓
-              </div>
-
+              <div class="benefit-check">✓</div>
               Improved road awareness
-
             </div>
-
-
             <div class="benefit">
-
-              <div class="benefit-check">
-                ✓
-              </div>
-
+              <div class="benefit-check">✓</div>
               Practical driving skills
-
             </div>
-
-
             <div class="benefit">
-
-              <div class="benefit-check">
-                ✓
-              </div>
-
+              <div class="benefit-check">✓</div>
               Defensive driving awareness
-
             </div>
-
-
             <div class="benefit">
-
-              <div class="benefit-check">
-                ✓
-              </div>
-
+              <div class="benefit-check">✓</div>
               Increased confidence
-
             </div>
-
-
             <div class="benefit">
-
-              <div class="benefit-check">
-                ✓
-              </div>
-
+              <div class="benefit-check">✓</div>
               Licence test preparation
-
             </div>
-
           </div>
 
-          <a
-            href="#booking"
-            class="btn btn-primary"
-          >
-            Register / Enquire Now
-          </a>
-
+          <a href="#booking" class="btn btn-primary">Register / Enquire Now</a>
         </div>
-
       </div>
-
     </section>
 
-
-    <!-- =========================
-         BOOKING
-    ========================= -->
-
-    <section
-      class="booking-section"
-      id="booking"
-    >
-
+    <section class="booking-section" id="booking">
       <div class="container">
-
         <div class="section-heading">
-
-          <div class="section-label">
-            Online Booking
-          </div>
-
-          <h2>
-            Request a driving lesson.
-          </h2>
-
-          <p>
-            Complete the form below and your
-            enquiry will be prepared as a
-            WhatsApp message.
-          </p>
-
+          <div class="section-label">Online Booking</div>
+          <h2>Request a driving lesson.</h2>
+          <p>Complete the form below and your enquiry will be prepared as a WhatsApp message.</p>
         </div>
 
         <div class="booking-box">
-
-          <form
-            class="booking-form"
-            id="bookingForm"
-          >
-
+          <form class="booking-form" id="bookingForm">
             <div class="form-grid">
-
               <div class="form-group">
-
-                <label for="name">
-                  Full Name
-                </label>
-
-                <input
-                  type="text"
-                  id="name"
-                  placeholder="Your full name"
-                  required
-                >
-
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Your full name" required>
               </div>
 
-
               <div class="form-group">
-
-                <label for="phone">
-                  Phone Number
-                </label>
-
-                <input
-                  type="tel"
-                  id="phone"
-                  placeholder="e.g. 071 234 5678"
-                  required
-                >
-
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="e.g. 071 234 5678" required>
               </div>
 
-
               <div class="form-group">
-
-                <label for="course">
-                  Licence Code
-                </label>
-
-                <select
-                  id="course"
-                  required
-                >
-
-                  <option value="">
-                    Select licence code
-                  </option>
-
-                  <option value="Code 8">
-                    Code 8
-                  </option>
-
-                  <option value="Code 10">
-                    Code 10
-                  </option>
-
-                  <option value="Code 14">
-                    Code 14
-                  </option>
-
-                  <option value="Other">
-                    Other / Enquiry
-                  </option>
-
+                <label for="course">Licence Code</label>
+                <select id="course" required>
+                  <option value="">Select licence code</option>
+                  <option value="Code 8">Code 8</option>
+                  <option value="Code 10">Code 10</option>
+                  <option value="Code 14">Code 14</option>
+                  <option value="Other">Other / Enquiry</option>
                 </select>
-
               </div>
 
-
               <div class="form-group">
-
-                <label for="experience">
-                  Driving Experience
-                </label>
-
+                <label for="experience">Driving Experience</label>
                 <select id="experience">
-
-                  <option>
-                    Complete beginner
-                  </option>
-
-                  <option>
-                    Some driving experience
-                  </option>
-
-                  <option>
-                    Preparing for licence test
-                  </option>
-
-                  <option>
-                    Refresher training
-                  </option>
-
+                  <option>Complete beginner</option>
+                  <option>Some driving experience</option>
+                  <option>Preparing for licence test</option>
+                  <option>Refresher training</option>
                 </select>
-
               </div>
-
 
               <div class="form-group">
-
-                <label for="date">
-                  Preferred Date
-                </label>
-
-                <input
-                  type="date"
-                  id="date"
-                  required
-                >
-
+                <label for="date">Preferred Date</label>
+                <input type="date" id="date" required>
               </div>
-
 
               <div class="form-group">
-
-                <label for="time">
-                  Preferred Time
-                </label>
-
-                <input
-                  type="time"
-                  id="time"
-                  required
-                >
-
+                <label for="time">Preferred Time</label>
+                <input type="time" id="time" required>
               </div>
-
             </div>
-
 
             <div class="form-group">
-
-              <label for="message">
-                Additional Message
-              </label>
-
-              <textarea
-                id="message"
-                placeholder="Tell us anything else about your driving lesson request..."
-              ></textarea>
-
+              <label for="message">Additional Message</label>
+              <textarea id="message" placeholder="Tell us anything else about your driving lesson request..."></textarea>
             </div>
-
 
             <p class="booking-note">
-              Your request will be sent through WhatsApp
-              for confirmation. Submitting this form does
-              not automatically confirm an appointment.
+              Your request will be sent through WhatsApp for confirmation. Submitting this form does not automatically confirm an appointment.
             </p>
 
-
-            <button
-              type="submit"
-              class="btn btn-primary"
-            >
-              💬 Send Booking Request On WhatsApp
-            </button>
-
+            <button type="submit" class="btn btn-primary">📲 Send Booking Request On WhatsApp</button>
           </form>
-
         </div>
-
       </div>
-
     </section>
 
-
-    <!-- =========================
-         FAQ
-    ========================= -->
-
-    <section
-      class="faq-section"
-      id="faq"
-    >
-
+    <section class="faq-section" id="faq">
       <div class="container">
-
         <div class="section-heading">
-
-          <div class="section-label">
-            Frequently Asked Questions
-          </div>
-
-          <h2>
-            Questions? We've got you covered.
-          </h2>
-
+          <div class="section-label">Frequently Asked Questions</div>
+          <h2>Questions? We’ve got you covered.</h2>
         </div>
-
 
         <div class="faq">
-
           <details>
-
-            <summary>
-              Which licence codes do you offer?
-            </summary>
-
-            <p>
-              Mafia & Sons Driving School offers
-              training for Code 8, Code 10 and
-              Code 14.
-            </p>
-
+            <summary>Which licence codes do you offer?</summary>
+            <p>Mafia & Sons Driving School offers training for Code 8, Code 10 and Code 14.</p>
           </details>
 
-
           <details>
-
-            <summary>
-              How do I book a lesson?
-            </summary>
-
-            <p>
-              Complete the booking form on this
-              website or contact us directly on
-              WhatsApp or by phone.
-            </p>
-
+            <summary>How do I book a lesson?</summary>
+            <p>Complete the booking form on this website or contact us directly on WhatsApp or by phone.</p>
           </details>
 
-
           <details>
-
-            <summary>
-              Can I choose my preferred date and time?
-            </summary>
-
-            <p>
-              Yes. You can select your preferred
-              date and time in the booking form.
-              The school will confirm availability.
-            </p>
-
+            <summary>Can I choose my preferred date and time?</summary>
+            <p>Yes. You can select your preferred date and time in the booking form. The school will confirm availability.</p>
           </details>
 
-
           <details>
-
-            <summary>
-              Do you offer refresher driving?
-            </summary>
-
-            <p>
-              Refresher training can be requested.
-              Contact Mafia & Sons to discuss your
-              requirements and availability.
-            </p>
-
+            <summary>Do you offer refresher driving?</summary>
+            <p>Refresher training can be requested. Contact Mafia & Sons to discuss your requirements and availability.</p>
           </details>
 
-
           <details>
-
-            <summary>
-              How much do driving lessons cost?
-            </summary>
-
-            <p>
-              Please contact Mafia & Sons for
-              current lesson prices and packages.
-            </p>
-
+            <summary>How much do driving lessons cost?</summary>
+            <p>Please contact Mafia & Sons for current lesson prices and packages.</p>
           </details>
 
-
           <details>
-
-            <summary>
-              How can I contact Mafia & Sons?
-            </summary>
-
-            <p>
-              Call or WhatsApp us on
-              <strong>064 578 3544</strong>.
-            </p>
-
+            <summary>How can I contact Mafia & Sons?</summary>
+            <p>Call or WhatsApp us on <strong>064 578 3544</strong>.</p>
           </details>
-
         </div>
-
       </div>
-
     </section>
 
-
-    <!-- =========================
-         CONTACT
-    ========================= -->
-
     <section id="contact">
-
       <div class="container contact-grid">
-
         <div>
-
           <div class="section-heading">
-
-            <div class="section-label">
-              Contact Us
-            </div>
-
-            <h2>
-              Ready to get on the road?
-            </h2>
-
-            <p>
-              Contact Mafia & Sons Driving School
-              to enquire about lessons, licence
-              codes, availability and pricing.
-            </p>
-
+            <div class="section-label">Contact Us</div>
+            <h2>Ready to get on the road?</h2>
+            <p>Contact Mafia & Sons Driving School to enquire about lessons, licence codes, availability and pricing.</p>
           </div>
-
 
           <div class="contact-card">
-
             <div class="contact-item">
-
-              <div class="contact-icon">
-                📞
-              </div>
-
+              <div class="contact-icon">☎</div>
               <div>
-
-                <small>
-                  Phone
-                </small>
-
-                <strong>
-
-                  <a href="tel:+27645783544">
-                    +27 64 578 3544
-                  </a>
-
-                </strong>
-
+                <small>Phone</small>
+                <strong><a href="tel:+27645783544">+27 64 578 3544</a></strong>
               </div>
-
             </div>
 
-
             <div class="contact-item">
-
-              <div class="contact-icon">
-                💬
-              </div>
-
+              <div class="contact-icon">💬</div>
               <div>
-
-                <small>
-                  WhatsApp
-                </small>
-
-                <strong>
-
-                  <a
-                    href="https://wa.me/27645783544"
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    Chat With Us
-                  </a>
-
-                </strong>
-
+                <small>WhatsApp</small>
+                <strong><a href="https://wa.me/27645783544" target="_blank" rel="noopener">Chat With Us</a></strong>
               </div>
-
             </div>
 
-
             <div class="contact-item">
-
-              <div class="contact-icon">
-                🚗
-              </div>
-
+              <div class="contact-icon">🚗</div>
               <div>
-
-                <small>
-                  Licence Training
-                </small>
-
-                <strong>
-                  Code 8 • Code 10 • Code 14
-                </strong>
-
+                <small>Licence Training</small>
+                <strong>Code 8 • Code 10 • Code 14</strong>
               </div>
-
             </div>
-
           </div>
-
         </div>
 
-
         <div class="contact-card">
-
-          <h3>
-            Quick WhatsApp Enquiry
-          </h3>
-
-          <p
-            style="
-              color:#999;
-              margin:10px 0 25px;
-            "
-          >
-            Send us a quick message and we'll
-            respond on WhatsApp.
+          <h3>Quick WhatsApp Enquiry</h3>
+          <p style="color:#999; margin:10px 0 25px;">
+            Send us a quick message and we'll respond on WhatsApp.
           </p>
-
-
           <a
             href="https://wa.me/27645783544?text=Hello%20Mafia%20%26%20Sons%20Driving%20School.%20I%20would%20like%20to%20enquire%20about%20driving%20lessons."
             target="_blank"
@@ -2016,275 +1190,98 @@
             class="btn btn-primary"
             style="width:100%;"
           >
-            💬 WhatsApp Now
+            📲 WhatsApp Now
           </a>
-
 
           <a
             href="tel:+27645783544"
             class="btn btn-outline"
-            style="
-              width:100%;
-              margin-top:12px;
-            "
+            style="width:100%; margin-top:12px;"
           >
-            📞 Call Now
+            ☎ Call Now
           </a>
-
         </div>
-
       </div>
-
     </section>
-
   </main>
 
-
-  <!-- =========================
-       FOOTER
-  ========================= -->
-
   <footer>
-
     <div class="container footer-content">
-
       <div class="footer-brand">
-
-        <strong>
-          Mafia & Sons Driving School
-        </strong>
-
-        <p>
-          Professional Training •
-          Patience • Passion •
-          Your Success
-        </p>
-
+        <strong>Mafia & Sons Driving School</strong>
+        <p>Professional Training • Patience • Passion • Your Success</p>
       </div>
-
 
       <div class="footer-links">
-
-        <a href="#home">
-          Home
-        </a>
-
-        <a href="#courses">
-          Courses
-        </a>
-
-        <a href="#booking">
-          Book
-        </a>
-
-        <a href="#contact">
-          Contact
-        </a>
-
+        <a href="#home">Home</a>
+        <a href="#courses">Courses</a>
+        <a href="#booking">Book</a>
+        <a href="#contact">Contact</a>
       </div>
 
-
-      <div>
-        © <span id="year"></span>
-        Mafia & Sons
-      </div>
-
+      <div>© <span id="year"></span> Mafia & Sons</div>
     </div>
-
   </footer>
-
-
-  <!-- =========================
-       FLOATING WHATSAPP
-  ========================= -->
 
   <a
     href="https://wa.me/27645783544"
     target="_blank"
     rel="noopener"
     class="floating-whatsapp"
-    aria-label="WhatsApp Mafia and Sons"
+    aria-label="WhatsApp Mafia & Sons"
   >
     💬
   </a>
 
-
-  <!-- =========================
-       TOAST
-  ========================= -->
-
-  <div
-    class="toast"
-    id="toast"
-  >
-    WhatsApp booking request prepared.
-  </div>
-
-
-  <!-- =========================
-       JAVASCRIPT
-  ========================= -->
+  <div class="toast" id="toast">WhatsApp booking request prepared.</div>
 
   <script>
+    const menuButton = document.getElementById('menuButton');
+    const navLinks = document.getElementById('navLinks');
 
-    /* MOBILE MENU */
+    menuButton.addEventListener('click', function () {
+      navLinks.classList.toggle('active');
+    });
 
-    const menuButton =
-      document.getElementById("menuButton");
-
-    const navLinks =
-      document.getElementById("navLinks");
-
-    menuButton.addEventListener(
-      "click",
-      function () {
-
-        navLinks.classList.toggle("active");
-
-      }
-    );
-
-
-    document
-      .querySelectorAll(".nav-links a")
-      .forEach(function (link) {
-
-        link.addEventListener(
-          "click",
-          function () {
-
-            navLinks.classList.remove("active");
-
-          }
-        );
-
+    document.querySelectorAll('.nav-links a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        navLinks.classList.remove('active');
       });
+    });
 
+    document.getElementById('year').textContent = new Date().getFullYear();
 
-    /* CURRENT YEAR */
+    const bookingForm = document.getElementById('bookingForm');
+    bookingForm.addEventListener('submit', function (event) {
+      event.preventDefault();
 
-    document.getElementById("year").textContent =
-      new Date().getFullYear();
+      const name = document.getElementById('name').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const course = document.getElementById('course').value;
+      const experience = document.getElementById('experience').value;
+      const date = document.getElementById('date').value;
+      const time = document.getElementById('time').value;
+      const message = document.getElementById('message').value.trim();
 
-
-    /* PREVENT PAST DATES */
-
-    const dateInput =
-      document.getElementById("date");
-
-    const today =
-      new Date();
-
-    const localDate =
-      new Date(
-        today.getTime() -
-        today.getTimezoneOffset() * 60000
-      )
-        .toISOString()
-        .split("T")[0];
-
-    dateInput.min = localDate;
-
-
-    /* WHATSAPP BOOKING */
-
-    const bookingForm =
-      document.getElementById("bookingForm");
-
-    bookingForm.addEventListener(
-      "submit",
-      function (event) {
-
-        event.preventDefault();
-
-        const name =
-          document.getElementById("name").value.trim();
-
-        const phone =
-          document.getElementById("phone").value.trim();
-
-        const course =
-          document.getElementById("course").value;
-
-        const experience =
-          document.getElementById("experience").value;
-
-        const date =
-          document.getElementById("date").value;
-
-        const time =
-          document.getElementById("time").value;
-
-        const message =
-          document.getElementById("message").value.trim();
-
-
-        const whatsappMessage =
-
-`Hello Mafia & Sons Driving School 👋
-
+      const whatsappMessage =
+        `Hello Mafia & Sons Driving School 👋
 I would like to enquire about driving lessons.
 
-━━━━━━━━━━━━━━━━━━
+Name: ${name}
+Phone: ${phone}
+Licence Code: ${course}
+Driving Experience: ${experience}
+Preferred Date: ${date}
+Preferred Time: ${time}
+Message: ${message || 'No additional message'}`;
 
-👤 Name:
-${name}
+      const whatsappURL = 'https://wa.me/27645783544?text=' + encodeURIComponent(whatsappMessage);
+      window.open(whatsappURL, '_blank');
 
-📱 Phone:
-${phone}
-
-🚗 Licence Code:
-${course}
-
-🎯 Experience:
-${experience}
-
-📅 Preferred Date:
-${date}
-
-⏰ Preferred Time:
-${time}
-
-📝 Message:
-${message || "No additional message"}
-
-━━━━━━━━━━━━━━━━━━
-
-Please confirm availability and pricing.
-
-Thank you.`;
-
-
-        const whatsappURL =
-          "https://wa.me/27645783544?text=" +
-          encodeURIComponent(whatsappMessage);
-
-
-        window.open(
-          whatsappURL,
-          "_blank"
-        );
-
-
-        const toast =
-          document.getElementById("toast");
-
-        toast.classList.add("show");
-
-
-        setTimeout(
-          function () {
-
-            toast.classList.remove("show");
-
-          },
-          3500
-        );
-
-      }
-    );
-
+      const toast = document.getElementById('toast');
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 3500);
+    });
   </script>
-
 </body>
 </html>
